@@ -26,7 +26,7 @@
   <link rel="stortcut icon" href="favicon.png" type="image/png">
   <link rel="apple-touch-icon" href="favicon.png">
   
-  <title>${2:문서 제목}</title>
+  <title>Hello Vue.js</title>
 </head>
 <body>
     <!-- layout ========================================= -->
@@ -36,7 +36,27 @@
   <p><a target="_blank" href="http://enable-javascript.com/ko/">자바스크립트 활성화 처리하기</a></p>
 </noscript>
 <!-- noscript =============================================== -->
+<div id="app">
+    <h1>Hello {{ str }} world!</h1>
+</div>
 
-<script></script>
+  <div id="aside">{{ aside }}</div>
+  <div id="container">
+  <div id="header"> {{ header }} </div>
+  <div id="contents"> {{ contents }} </div>
+  <div id="footer" v-bind:class=' "bg" '> {{ footer }} </div>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="../js/src/vue.js"></script>
+<script>
+    var app = new Vue({
+      el: '#app',
+      data: {
+        str: 'Vue.js'
+      }
+    });
+    </script>
 </body>
 </html>
