@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<!-- test.html -->
+<html lang="ko-KR">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="descrpition" content="웹페이지 작업" >
+  <meta name="keyword" content="html,css,js,web,design,웹디자인,스마트,스마트서버">
+  <meta name="author" content="조제바리">
+  <meta name="generator" content="illustrator,photoshop,sublimetext,vscode">
+  
+  <!-- <link rel="stylesheet" href="../font/NanumSquare/nanumsquare.css"> -->
+  <!-- <link rel="stylesheet" href="../font/web_Gyeonggi/stylesheet.css"> -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css">
+  <link rel="stylesheet" href="../css/base/reset.css">
+  <link rel="stylesheet" href="../css/base/common.css">
+  <link rel="stylesheet" href="../css/test.css">
+  
+  <!--[if IE]>
+    <script src="../ie/html5shiv/dist/html5shiv.min.js"></script>
+  <script src="../ie/PIE/PIE.js"></script>
+  <script src="../ie/Respond/dest/respond.min.js"></script>
+  <![endif]-->
+  
+  <link rel="stortcut icon" href="favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="favicon.png">
+  <title>Hello Vue.js</title>
+
+
+ <!-- <style type="text/css">
+    .caption4 {
+        font-family:"NanumSquere";
+        font-size: 14px;
+        line-height:28px;
+        font-weight:600;
+    }
+</style> -->
+ 
+</head>
+<body>
+    <!-- layout ========================================= -->
+<noscript>
+  <p>현재 접속하고 있는 사이트의 기능의 일부가 원활하게 실행되고 있지 않습니다. <br />
+  자바스크립트의 기능을 활성화 해주세요.</p>
+  <p><a target="_blank" href="http://enable-javascript.com/ko/">자바스크립트 활성화 처리하기</a></p>
+</noscript>
+<!-- noscript =============================================== -->
+								<!-- 내용 시작 -->
+
+<div id="wrap">
+  <table class="statL" summary="선정결과">
+	<h1 class="hidden">선정결과</h1>	<br />	<br />
+
+	<colgroup>
+		<col width="47px" />
+		<col width="120px"/>
+		<col width="80px" />
+		<col width="500px" />
+		<col width="100px" />
+		<col width="120px" />
+		<col width="120px" />
+		<col width="120px" />
+		<col width="50px" />
+		<!-- <col width="80px" /> -->
+	</colgroup>
+	<thead>
+		<tr>
+			<th rowspan="2">연번</th>
+			<th rowspan="2">신청단체명</th>
+			<th rowspan="2">지역</th>
+			<th rowspan="2">신청작가명</th>
+			<th rowspan="2">신청<br />작가수</th>
+			<th rowspan="2">선정<br />작가수</th>
+			<th colspan="3">지원결정 예산액(천원)</th>
+			<!-- <th rowspan="3">선정<br />구분</th> -->
+        </tr>
+    </div>
+		<tr>
+			<th>창작활동비</th>
+			<th>프로모션비</th>
+			<th>총액</th>
+		</tr>
+	</thead>
+	<tbody>
+
+		<tr>
+			<td class="tCenter">1</td>
+            <td class="tCenter">갤러리 41</td>
+			<td>서울</td>
+			<td>김은숙, 송민철, 정지원</td>
+			<td class="tCenter">3</td>
+			<td class="tCenter">3</td>
+			<td class="tCenter">30,000</td>
+			<td class="lastL">7,500</td>
+			<td class="lastL">37,500</td>
+			<!-- <td class="lastL">선정</td> -->
+		</tr>
+
+
+
+		<tr>
+			<td class="tCenter">2</td>
+			<td class="tCenter">갤러리s.p</td>
+			<td>서울</td>
+			<td>서지선, 이동훈, 이지연</td>
+			<td class="tCenter">3</td>
+			<td class="tCenter">3</td>
+			<td class="tCenter">30,000</td>
+			<td class="lastL">7,500</td>
+			<td class="lastL">37,500</td>
+			<!-- <td class="lastL">선정</td> -->
+		</tr>
+
+
+
+		<tr>
+			<td class="tCenter">3</td>
+			<td class="tCenter">갤러리가비</td>
+			<td>서울</td>
+			<td>김시원, 한선욱</td>
+			<td class="tCenter">2</td>
+			<td class="tCenter">2</td>
+			<td class="tCenter">20,000</td>
+			<td class="lastL">5,000</td>
+			<td class="lastL">25,000</td>
+			<!-- <td class="lastL">선정</td> -->
+		</tr>
+
+
+
+		<tr>
+			<td class="tCenter">4</td>
+			<td class="tCenter">갤러리기체</td>
+			<td>서울</td>
+			<td>이혜인</td>
+			<td class="tCenter">1</td>
+			<td class="tCenter">1</td>
+			<td class="tCenter">10,000</td>
+			<td class="lastL">2,500</td>
+			<td class="lastL">12,500</td>
+			<!-- <td class="lastL">선정</td> -->
+		</tr>
+
+
+
+		<tr>
+			<td class="tCenter">5</td>
+			<td class="tCenter">갤러리룩스</td>
+			<td>서울</td>
+			<td>유재연, 추미림, 함혜경</td>
+			<td class="tCenter">3</td>
+			<td class="tCenter">3</td>
+			<td class="tCenter">30,000</td>
+			<td class="lastL">7,500</td>
+			<td class="lastL">37,500</td>
+			<!-- <td class="lastL">선정</td> -->
+		</tr>
+
+
+
+		<tr>
+			<td class="tCenter">6</td>
+			<td class="tCenter">갤러리박</td>
+			<td>서울</td>
+			<td>김지희</td>
+			<td class="tCenter">1</td>
+			<td class="tCenter">1</td>
+			<td class="tCenter">10,000</td>
+			<td class="lastL">2,500</td>
+			<td class="lastL">12,500</td>
+			<!-- <td class="lastL">선정</td> -->
+		</tr>
+
+
+
+		<tr>
+			<td class="tCenter">7</td>
+			<td class="tCenter">갤러리<br />반디트라소</td>
+			<td>서울</td>
+			<td>곽한울, 사윤택</td>
+			<td class="tCenter">2</td>
+			<td class="tCenter">2</td>
+			<td class="tCenter">20,000</td>
+			<td class="lastL">5,000</td>
+			<td class="lastL">25,000</td>
+			<!-- <td class="lastL">선정</td> -->
+		</tr>
+
+
+
+		<tr>
+			<td class="tCenter">8</td>
+			<td class="tCenter">갤러리소소</td>
+			<td>경기</td>
+			<td>김윤수, 송민규, 이해민선</td>
+			<td class="tCenter">3</td>
+			<td class="tCenter">3</td>
+			<td class="tCenter">30,000</td>
+			<td class="lastL">7,500</td>
+			<td class="lastL">37,500</td>
+			<!-- <td class="lastL">선정</td> -->
+		</tr>
+
+
+
+		<tr>
+			<td class="tCenter">9</td>
+			<td class="tCenter">갤러리수</td>
+			<td>서울</td>
+			<td>신현정</td>
+			<td class="tCenter">1</td>
+			<td class="tCenter">1</td>
+			<td class="tCenter">10,000</td>
+			<td class="lastL">2,500</td>
+			<td class="lastL">12,500</td>
+			<!-- <td class="lastL">선정</td> -->
+		</tr>
+
+
+
+		<tr>
+			<td class="tCenter">10</td>
+			<td class="tCenter">갤러리스클로</td>
+			<td>서울</td>
+			<td>김남두</td>
+			<td class="tCenter">1</td>
+			<td class="tCenter">1</td>
+			<td class="tCenter">10,000</td>
+			<td class="lastL">2,500</td>
+			<td class="lastL">12,500</td>
+			<!-- <td class="lastL">선정</td> -->
+		</tr>
+
+
+
+		<tr>
+			<td class="tCenter">11</td>
+			<td class="tCenter">갤러리아트숲</td>
+			<td>부산</td>
+			<td>박현진, 정보경</td>
+			<td class="tCenter">2</td>
+			<td class="tCenter">2</td>
+			<td class="tCenter">20,000</td>
+			<td class="lastL">5,000</td>
+			<td class="lastL">25,000</td>
+			<!-- <td class="lastL">선정</td> -->
+		</tr>
+
+
+
+		<tr>
+			<td class="tCenter">12</td>
+			<td class="tCenter">갤러리<br />아트플라자</td>
+			<td>서울</td>
+			<td>오건용, 유지환</td>
+			<td class="tCenter">2</td>
+			<td class="tCenter">2</td>
+			<td class="tCenter">20,000</td>
+			<td class="lastL">5,000</td>
+			<td class="lastL">25,000</td>
+			<!-- <td class="lastL">선정</td> -->
+		</tr>
+
+
+
+		<tr>
+			<td class="tCenter">13</td>
+			<td class="tCenter">갤러리오로라</td>
+			<td>경남</td>
+			<td>권혁, 김봉수</td>
+			<td class="tCenter">2</td>
+			<td class="tCenter">2</td>
+			<td class="tCenter">20,000</td>
+			<td class="lastL">5,000</td>
+			<td class="lastL">25,000</td>
+			<!-- <td class="lastL">선정</td> -->
+		</tr>
+
+
+
+		<tr>
+			<td class="tCenter">14</td>
+			<td class="tCenter">갤러리이듬</td>
+			<td>부산</td>
+			<td>구경환</td>
+			<td class="tCenter">1</td>
+			<td class="tCenter">1</td>
+			<td class="tCenter">10,000</td>
+			<td class="lastL">2,500</td>
+			<td class="lastL">12,500</td>
+			<!-- <td class="lastL">선정</td> -->
+		</tr>
+
+
+
+		<tr>
+			<td class="tCenter">15</td>
+			<td class="tCenter">갤러리이마주</td>
+			<td>서울</td>
+			<td>정성윤</td>
+			<td class="tCenter">1</td>
+			<td class="tCenter">1</td>
+			<td class="tCenter">10,000</td>
+			<td class="lastL">2,500</td>
+			<td class="lastL">12,500</td>
+			<!-- <td class="lastL">선정</td> -->
+		</tr>
+
+
+
+		<tr>
+			<td class="tCenter">16</td>
+			<td class="tCenter">갤러리이배</td>
+			<td>부산</td>
+			<td>배상순, 이우림, 임지빈</td>
+			<td class="tCenter">3</td>
+			<td class="tCenter">3</td>
+			<td class="tCenter">30,000</td>
+			<td class="lastL">7,500</td>
+			<td class="lastL">37,500</td>
+			<!-- <td class="lastL">선정</td> -->
+		</tr>
+
+
+
+		<tr>
+			<td class="tCenter">17</td>
+			<td class="tCenter">갤러리조선</td>
+			<td>서울</td>
+			<td>안상훈, 정정주</td>
+			<td class="tCenter">2</td>
+			<td class="tCenter">2</td>
+			<td class="tCenter">20,000</td>
+			<td class="lastL">5,000</td>
+			<td class="lastL">25,000</td>
+			<!-- <td class="lastL">선정</td> -->
+		</tr>
+
+
+
+		<tr>
+			<td class="tCenter">18</td>
+			<td class="tCenter">갤러리조이</td>
+			<td>부산</td>
+			<td>조덕래</td>
+			<td class="tCenter">1</td>
+			<td class="tCenter">1</td>
+			<td class="tCenter">10,000</td>
+			<td class="lastL">2,500</td>
+			<td class="lastL">12,500</td>
+			<!-- <td class="lastL">선정</td> -->
+		</tr>
+
+
+
+		<tr>
+			<td class="tCenter">19</td>
+			<td class="tCenter">갤러리초이</td>
+			<td>서울</td>
+			<td>송미리내</td>
+			<td class="tCenter">1</td>
+			<td class="tCenter">1</td>
+			<td class="tCenter">10,000</td>
+			<td class="lastL">2,500</td>
+			<td class="lastL">12,500</td>
+			<!-- <td class="lastL">선정</td> -->
+		</tr>
+
+
+
+		<tr>
+			<td class="tCenter">20</td>
+			<td class="tCenter">더디에이치<br />(THE DH ART)</td>
+			<td>경기</td>
+			<td>김승택, 김태형</td>
+			<td class="tCenter">2</td>
+			<td class="tCenter">2</td>
+			<td class="tCenter">20,000</td>
+			<td class="lastL">5,000</td>
+			<td class="lastL">25,000</td>
+			<!-- <td class="lastL">선정</td> -->
+		</tr>
+
+
+
+		<tr>
+			<td class="tCenter">21</td>
+			<td class="tCenter">더페이지<br />갤러리</td>
+			<td>서울</td>
+			<td>정명택</td>
+			<td class="tCenter">1</td>
+			<td class="tCenter">1</td>
+			<td class="tCenter">10,000</td>
+			<td class="lastL">2,500</td>
+			<td class="lastL">12,500</td>
+			<!-- <td class="lastL">선정</td> -->
+		</tr>
+
+
+
+		<tr>
+			<td class="tCenter">22</td>
+			<td class="tCenter">디스위켄드룸</td>
+			<td>서울</td>
+			<td>곽상원, 장은의, 최지원</td>
+			<td class="tCenter">3</td>
+			<td class="tCenter">3</td>
+			<td class="tCenter">30,000</td>
+			<td class="lastL">7,500</td>
+			<td class="lastL">37,500</td>
+			<!-- <td class="lastL">선정</td> -->
+		</tr>
+
+
+
+		<tr>
+			<td class="tCenter">23</td>
+			<td class="tCenter">라흰</td>
+			<td>서울</td>
+			<td>박성수, 양화선, 진광영</td>
+			<td class="tCenter">3</td>
+			<td class="tCenter">3</td>
+			<td class="tCenter">30,000</td>
+			<td class="lastL">7,500</td>
+			<td class="lastL">37,500</td>
+			<!-- <td class="lastL">선정</td> -->
+		</tr>
+
+
+
+		<tr>
+			<td class="tCenter">24</td>
+			<td class="tCenter">미광화랑</td>
+			<td>부산</td>
+			<td>이지훈, 하미화</td>
+			<td class="tCenter">2</td>
+			<td class="tCenter">2</td>
+			<td class="tCenter">20,000</td>
+			<td class="lastL">5,000</td>
+			<td class="lastL">25,000</td>
+			<!-- <td class="lastL">선정</td> -->
+		</tr>
+
+
+
+		<tr>
+			<td class="tCenter">25</td>
+			<td class="tCenter">상업화랑</td>
+			<td>서울</td>
+			<td>권희수, 박승예, 송수영 </td>
+			<td class="tCenter">3</td>
+			<td class="tCenter">3</td>
+			<td class="tCenter">30,000</td>
+			<td class="lastL">7,500</td>
+			<td class="lastL">37,500</td>
+			<!-- <td class="lastL">선정</td> -->
+		</tr>
+
+
+
+		<tr>
+			<td class="tCenter">26</td>
+			<td class="tCenter">셀시우스<br />(갤러리<br />아트셀시)</td>
+			<td>서울</td>
+			<td>박지영, 윤영혜, 최유희</td>
+			<td class="tCenter">3</td>
+			<td class="tCenter">3</td>
+			<td class="tCenter">30,000</td>
+			<td class="lastL">7,500</td>
+			<td class="lastL">37,500</td>
+			<!-- <td class="lastL">선정</td> -->
+		</tr>
+
+
+
+		<tr>
+			<td class="tCenter">27</td>
+			<td class="tCenter">소향 갤러리</td>
+			<td>부산</td>
+			<td>박한샘, 오유경</td>
+			<td class="tCenter">2</td>
+			<td class="tCenter">2</td>
+			<td class="tCenter">20,000</td>
+			<td class="lastL">5,000</td>
+			<td class="lastL">25,000</td>
+			<!-- <td class="lastL">선정</td> -->
+		</tr>
+
+
+
+		<tr>
+			<td class="tCenter">28</td>
+			<td class="tCenter">스페이스<br />나인</td>
+			<td>서울</td>
+			<td>김윤아, 홍준호</td>
+			<td class="tCenter">2</td>
+			<td class="tCenter">2</td>
+			<td class="tCenter">20,000</td>
+			<td class="lastL">5,000</td>
+			<td class="lastL">25,000</td>
+			<!-- <td class="lastL">선정</td> -->
+		</tr>
+
+
+
+		<tr>
+			<td class="tCenter">29</td>
+			<td class="tCenter">스페이스<br />윌링앤딜링</td>
+			<td>서울</td>
+			<td>로와정, 장성은</td>
+			<td class="tCenter">2</td>
+			<td class="tCenter">2</td>
+			<td class="tCenter">20,000</td>
+			<td class="lastL">5,000</td>
+			<td class="lastL">25,000</td>
+			<!-- <td class="lastL">선정</td> -->
+		</tr>
+
+
+
+		<tr>
+			<td class="tCenter">30</td>
+			<td class="tCenter">아터테인</td>
+			<td>서울</td>
+			<td>양경열, 유용선, 전희경</td>
+			<td class="tCenter">3</td>
+			<td class="tCenter">3</td>
+			<td class="tCenter">30,000</td>
+			<td class="lastL">7,500</td>
+			<td class="lastL">37,500</td>
+			<!-- <td class="lastL">선정</td> -->
+		</tr>
+
+
+
+		<tr>
+			<td class="tCenter">31</td>
+			<td class="tCenter">아트세인</td>
+			<td>서울</td>
+			<td>권남희, 정은혜</td>
+			<td class="tCenter">2</td>
+			<td class="tCenter">2</td>
+			<td class="tCenter">20,000</td>
+			<td class="lastL">5,000</td>
+			<td class="lastL">25,000</td>
+			<!-- <td class="lastL">선정</td> -->
+		</tr>
+
+
+
+		<tr>
+			<td class="tCenter">32</td>
+			<td class="tCenter">아트<br />스페이스휴</td>
+			<td>경기</td>
+			<td>김창영, 박광선, 윤상윤</td>
+			<td class="tCenter">3</td>
+			<td class="tCenter">3</td>
+			<td class="tCenter">30,000</td>
+			<td class="lastL">7,500</td>
+			<td class="lastL">37,500</td>
+			<!-- <td class="lastL">선정</td> -->
+		</tr>
+
+
+
+		<tr>
+			<td class="tCenter">33</td>
+			<td class="tCenter">아트웍스<br />파리서울</td>
+			<td>서울</td>
+			<td>이은화</td>
+			<td class="tCenter">1</td>
+			<td class="tCenter">1</td>
+			<td class="tCenter">10,000</td>
+			<td class="lastL">2,500</td>
+			<td class="lastL">12,500</td>
+			<!-- <td class="lastL">선정</td> -->
+		</tr>
+
+
+
+		<tr>
+			<td class="tCenter">34</td>
+			<td class="tCenter">앨갤러리</td>
+			<td>서울</td>
+			<td>이수연</td>
+			<td class="tCenter">1</td>
+			<td class="tCenter">1</td>
+			<td class="tCenter">10,000</td>
+			<td class="lastL">2,500</td>
+			<td class="lastL">12,500</td>
+			<!-- <td class="lastL">선정</td> -->
+		</tr>
+
+
+
+		<tr>
+			<td class="tCenter">35</td>
+			<td class="tCenter">에이라운지</td>
+			<td>서울</td>
+			<td>박미라, 표영실, 한성우</td>
+			<td class="tCenter">3</td>
+			<td class="tCenter">3</td>
+			<td class="tCenter">30,000</td>
+			<td class="lastL">7,500</td>
+			<td class="lastL">37,500</td>
+			<!-- <td class="lastL">선정</td> -->
+		</tr>
+
+
+
+		<tr>
+			<td class="tCenter">36</td>
+			<td class="tCenter">오뉴월</td>
+			<td>서울</td>
+			<td>김윤섭, 송성진, 최재영</td>
+			<td class="tCenter">3</td>
+			<td class="tCenter">3</td>
+			<td class="tCenter">30,000</td>
+			<td class="lastL">7,500</td>
+			<td class="lastL">37,500</td>
+			<!-- <td class="lastL">선정</td> -->
+		</tr>
+
+
+
+		<tr>
+			<td class="tCenter">37</td>
+			<td class="tCenter">이목화랑</td>
+			<td>서울</td>
+			<td>사박, 윤세열, 이미주</td>
+			<td class="tCenter">3</td>
+			<td class="tCenter">3</td>
+			<td class="tCenter">30,000</td>
+			<td class="lastL">7,500</td>
+			<td class="lastL">37,500</td>
+			<!-- <td class="lastL">선정</td> -->
+		</tr>
+
+
+
+		<tr>
+			<td class="tCenter">38</td>
+			<td class="tCenter">이유진갤러리</td>
+			<td>서울</td>
+			<td>김혜나, 전병구</td>
+			<td class="tCenter">2</td>
+			<td class="tCenter">2</td>
+			<td class="tCenter">20,000</td>
+			<td class="lastL">5,000</td>
+			<td class="lastL">25,000</td>
+			<!-- <td class="lastL">선정</td> -->
+		</tr>
+
+
+
+		<tr>
+			<td class="tCenter">39</td>
+			<td class="tCenter">이화익갤러리</td>
+			<td>서울</td>
+			<td>안두진, 차영석</td>
+			<td class="tCenter">2</td>
+			<td class="tCenter">2</td>
+			<td class="tCenter">20,000</td>
+			<td class="lastL">5,000</td>
+			<td class="lastL">25,000</td>
+			<!-- <td class="lastL">선정</td> -->
+		</tr>
+
+
+
+		<tr>
+			<td class="tCenter">40</td>
+			<td class="tCenter">지니청 (g.gallery)</td>
+			<td>서울</td>
+			<td>이정민</td>
+			<td class="tCenter">1</td>
+			<td class="tCenter">1</td>
+			<td class="tCenter">10,000</td>
+			<td class="lastL">2,500</td>
+			<td class="lastL">12,500</td>
+			<!-- <td class="lastL">선정</td> -->
+		</tr>
+
+
+
+		<tr>
+			<td class="tCenter">41</td>
+			<td class="tCenter">청화랑</td>
+			<td>서울</td>
+			<td>조성천, 추영애</td>
+			<td class="tCenter">2</td>
+			<td class="tCenter">2</td>
+			<td class="tCenter">20,000</td>
+			<td class="lastL">5,000</td>
+			<td class="lastL">25,000</td>
+			<!-- <td class="lastL">선정</td> -->
+		</tr>
+
+
+
+		<tr>
+			<td class="tCenter">42</td>
+			<td class="tCenter">키다리갤러리</td>
+			<td>대구</td>
+			<td>김민혜, 신대준, 양종용</td>
+			<td class="tCenter">3</td>
+			<td class="tCenter">3</td>
+			<td class="tCenter">30,000</td>
+			<td class="lastL">7,500</td>
+			<td class="lastL">37,500</td>
+			<!-- <td class="lastL">선정</td> -->
+		</tr>
+
+
+
+		<tr>
+			<td class="tCenter">43</td>
+			<td class="tCenter">피앤코<br />(스페이스 소)</td>
+			<td>서울</td>
+			<td>금민정, 이병호, 임선이</td>
+			<td class="tCenter">3</td>
+			<td class="tCenter">3</td>
+			<td class="tCenter">30,000</td>
+			<td class="lastL">7,500</td>
+			<td class="lastL">37,500</td>
+			<!-- <td class="lastL">선정</td> -->
+		</tr>
+
+
+
+		<tr>
+			<td class="tCenter">44</td>
+			<td class="tCenter">피투원(P21)</td>
+			<td>서울</td>
+			<td>이병찬, 정희민</td>
+			<td class="tCenter">2</td>
+			<td class="tCenter">2</td>
+			<td class="tCenter">20,000</td>
+			<td class="lastL">5,000</td>
+			<td class="lastL">25,000</td>
+			<!-- <td class="lastL">선정</td> -->
+		</tr>
+
+
+
+		<tr>
+			<td class="tCenter">45</td>
+			<td class="tCenter">AB 갤러리</td>
+			<td>서울</td>
+			<td>김승환, 조성원, 진형준</td>
+			<td class="tCenter">3</td>
+			<td class="tCenter">3</td>
+			<td class="tCenter">30,000</td>
+			<td class="lastL">7,500</td>
+			<td class="lastL">37,500</td>
+			<!-- <td class="lastL">선정</td> -->
+		</tr>
+
+
+
+		<tr>
+			<td class="tCenter">46</td>
+			<td class="tCenter">Gallery LP<br /> (*일부선정)</td>
+			<td>서울</td>
+			<td>김소희, 정진경</td>
+			<td class="tCenter">2</td>
+			<td class="tCenter">1</td>
+			<td class="tCenter">10,000</td>
+			<td class="lastL">2,500</td>
+			<td class="lastL">12,500</td>
+			<!-- <td class="lastL">선정</td> -->
+		</tr>
+
+		<tr>
+			<td class="tCenter" colspan="3">합계</td>
+			<td class="tCenter"></td>
+			<td class="tCenter">97</td>
+			<td class="tCenter">96</td>
+			<td class="tCenter">960,000</td>
+			<td class="lastL">240,000</td>
+			<td class="lastL">1,200,000</td>
+			<!-- <td class="lastL">선정</td> -->
+		</tr>
+
+	</tbody>
+</table>
+								<!-- 내용 끝 -->
+
+</body>
+</html>
