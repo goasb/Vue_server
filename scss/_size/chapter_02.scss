@@ -1,0 +1,63 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#headBox {
+    background-color: #fa0;
+
+    .nav {
+        ul {
+            display: flex;
+
+            li {
+                list-style: none;
+                margin: 10px;
+
+            }
+        }
+    }
+}
+
+#mainBox {
+    display: flex;
+
+    #section {
+        width: 70%;
+        background-color: #fa0;
+        margin: 10px;
+        padding: 10px;
+        box-sizing: border-box;
+
+        h1 {}
+
+        article {
+            background-color: #faf;
+            margin-bottom: 10px;
+            padding: 10px;
+
+            h2 {}
+
+            p {}
+        }
+    }
+
+    aside {
+        width: 30%;
+        background-color: #ada;
+        margin: 10px;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+}
+
+#footBox {
+    background-color: #f2a;
+
+    address {
+        
+        a {
+            display: block;
+        }
+    }
+}
