@@ -55,7 +55,7 @@ body { margin: 0; padding: 0; }
 
 #main .processBox .my_01 .numberBox_01 { display: flex; width: 100%; height: 80px; }
 
-#main .processBox .my_01 .botBox { margin: 20px 10px 0 30px; width: 40px; height: 40px; background-repeat: no-repeat; background-position: 50% 50%; background-size: contain; background-image: url("../../img/download_blue.png"); }
+#main .processBox .my_01 .botBox { margin: 20px 10px 0 30px; width: 40px; height: 40px; background-repeat: no-repeat; background-position: 50% 50%; background-size: contain; background-image: url("../img/download_blue.png"); }
 
 #main .processBox .my_01 .number { margin-top: 20px; display: block; width: 50px; height: 50px; font-size: 35px; font-weight: 900; }
 
@@ -65,7 +65,7 @@ body { margin: 0; padding: 0; }
 
 #main .processBox .my_01 .bottom_01 span { float: left; margin: 10px 130px 0 30px; font-size: 16px; font-weight: bold; color: #fff; }
 
-#main .processBox .my_01 .bottom_01 .bottom_bar_01 { margin: 6px 10px 0 0; float: left; width: 25px; height: 25px; background-repeat: no-repeat; background-position: 50% 50%; background-size: contain; background-image: url("../../img/download_white.png"); }
+#main .processBox .my_01 .bottom_01 .bottom_bar_01 { margin: 6px 10px 0 0; float: left; width: 25px; height: 25px; background-repeat: no-repeat; background-position: 50% 50%; background-size: contain; background-image: url("../img/download_white.png"); }
 
 #main .processBox .my_01 .bottom_01 p { font-size: 16px; font-weight: bold; line-height: 38px; color: #fff; }
 
@@ -161,7 +161,7 @@ body { margin: 0; padding: 0; }
 
 #main .sectionBox .slideBox { position: absolute; top: 18%; right: 0; width: 70%; height: 330px; background-color: #444; }
 
-#main .sectionBox .slideBox .imgBox { width: 100%; height: 330px; background-repeat: no-repeat; background-position: 50% 50%; background-size: contain; background-image: url("../../img/news.jpg"); background-size: cover; }
+#main .sectionBox .slideBox .imgBox { width: 100%; height: 330px; background-repeat: no-repeat; background-position: 50% 50%; background-size: contain; background-image: url("../img/news.jpg"); background-size: cover; }
 
 #main .sectionBox .slideBox .indicatorBox { width: 20%; height: 30px; margin: auto; }
 
