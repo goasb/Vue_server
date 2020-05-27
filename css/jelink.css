@@ -21,9 +21,9 @@ body { margin: 0; padding: 0; }
 
 #headBox .nav h1 { width: 145px; height: 50px; margin-top: 20px; margin-left: 120px; background-image: url(../img/color.jpg); background-repeat: no-repeat; background-size: contain; }
 
-#headBox .nav ul { display: flex; width: 750px; height: 100%; margin-left: 50px; line-height: 90px; }
+#headBox .nav ul { display: flex; width: 850px; height: 100%; margin-left: 50px; line-height: 90px; }
 
-#headBox .nav ul li { width: 150px; height: 100%; font-size: 16px; font-weight: bold; text-align: center; margin-left: 50px; }
+#headBox .nav ul li { width: 180px; height: 100%; font-size: 16px; font-weight: bold; text-align: center; margin-left: 50px; }
 
 #headBox .nav ul li a { display: block; width: 100%; height: 100%; color: #222; }
 
@@ -43,9 +43,9 @@ body { margin: 0; padding: 0; }
 
 #main .processBox .bottom { width: 100%; height: 40px; border-top: 1px solid #0b75a4; border-bottom: 1px solid #0b75a4; }
 
-#main .processBox .bottom span { width: 50%; float: left; margin: 10px 0 0 25px; font-size: 16px; font-weight: bold; color: #222; }
+#main .processBox .bottom span { width: 45%; float: left; margin: 10px 0 0 25px; font-size: 16px; font-weight: bold; color: #222; }
 
-#main .processBox .bottom .wrap_imgText { float: right; width: 40%; height: 100%; }
+#main .processBox .bottom .wrap_imgText { float: right; width: 45%; height: 100%; }
 
 #main .processBox .bottom .wrap_imgText .bottom_bar { margin: 0 10px 0 0; float: left; width: 25px; height: 40px; background-repeat: no-repeat; background-position: 50% 50%; background-size: contain; background-image: url("../img/download_black.png"); }
 
@@ -253,15 +253,15 @@ body { margin: 0; padding: 0; }
 
 #main .sectionBox .storeBox .develop .develop_img { position: absolute; right: 0; width: 40%; height: 100%; background-repeat: no-repeat; background-position: 50% 50%; background-size: contain; background-image: url("../img/develop.jpg"); background-size: cover; }
 
-#main .sectionBox .storeBox .develop .develop_text { position: absolute; top: 0; left: -60%; width: 60%; height: 100%; }
+#main .sectionBox .storeBox .develop .develop_text { position: absolute; top: 0; left: -70%; width: 65%; height: 100%; }
 
-#main .sectionBox .storeBox .develop .develop_text dl { margin: 50px 0 0 50px; width: 285px; height: 80%; font-size: 25px; }
+#main .sectionBox .storeBox .develop .develop_text dl { background-color: #faf; text-align: right; margin: 50px 0 0 50px; width: 350px; height: 80%; font-size: 25px; }
 
 #main .sectionBox .storeBox .develop .develop_text dl dt { text-align: right; margin-top: 10px; width: 100%; height: 60px; font-size: 25px; font-weight: 900; }
 
 #main .sectionBox .storeBox .develop .develop_text dl dd { text-align: right; width: 100%; height: 50px; font-size: 16px; font-weight: 800; color: #777; }
 
-#main .sectionBox .storeBox .develop .develop_text a { position: absolute; right: 17%; margin-top: -50px; display: block; width: 80px; height: 20px; }
+#main .sectionBox .storeBox .develop .develop_text a { position: absolute; right: 9%; margin-top: -50px; display: block; width: 80px; height: 20px; }
 
 #main .sectionBox .storeBox .develop .develop_text a span { display: block; width: 80px; height: 100%; font-size: 16px; color: #222; font-weight: bold; }
 
