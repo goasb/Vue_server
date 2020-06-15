@@ -1,0 +1,4 @@
+/* @mixin myname(){}   // @include myname(); @function myFn(){}  // myFn(); */
+body { padding: 0; margin: auto; }
+
+#wrap { width: 1120px; height: 100%; padding-top: 50px; }

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <link rel="stylesheet" href="../font/fontawesome/css/all.css">
+    <link rel="stylesheet" href="../css/base/reset.css">
+    <link rel="stylesheet" href="../css/base/common.css">
+    <link rel="stylesheet" href="../css/table_element.css">
+    
+    <!--[if IE]>
+    <script src="../ie/html5shiv/dist/html5shiv.min.js"></script>
+    <script src="../ie/PIE/PIE.js"></script>
+    <script src="../ie/Respond/dest/respond.min.js"></script>
+    <![endif]-->
+    
+    <link rel="stortcut icon" href="favicon.png" type="image/png">
+    <link rel="apple-touch-icon" href="favicon.png">
+    <title>table_element</title>
+</head>
+<body>
+
+<div id="wrap">
+    <h1>HTML / 요소 - 표 콘텐츠 & 양식</h1>
+    <br />
+    <!-- ========================= table ========================================= -->
+    <h2>데이터 표 table의 행(줄 tr )과 열(칸,셀(cell) / th,td ) 을 생성</h2>
+    <!-- Table Row / Table Heafer / Table Data -->
+    <br />
+    <!-- ex) -->
+    <div class="exBox">
+        <table class="ex_01">
+            <!-- 세로 표 -->
+            <caption>데이터 타입과 값</caption>
+            <tr>
+                <th colspan="2" id="th_data">데이터</th>
+            </tr>
+            <tr>
+                <th abbr="Type" scope="col" headers="th_data">데이터 타입</th>
+                <th abbr="value" scope="col" headers="th_data">데이터 값</th>
+            </tr>
+            <tr>
+                <td>알파벳</td>
+                <td>A</td>
+            </tr>
+            <tr>
+                <td>숫자</td>
+                <td>7</td>
+            </tr>
+        </table>
+        <br>
+        <table class="ex_02">
+            <!-- 가로 표 -->
+            <tr>
+                <th rowspan="2" id="th_data">데이터</th>
+                <th headers="th_data" id="th_type">타입</th>
+                <td headers="th_type">알파벳</td>
+                <td headers="th_type">숫자</td>
+            </tr>
+            <tr>
+                <th headers="th_data" id="th_value">값</th>
+                <td headers="th_value">A</td>
+                <td headers="th_value">7</td>
+            </tr>
+        </table>
+        <br>
+        <table class="ex_03">
+            <!-- colgroup -->
+            <caption>데이터 타입과 값</caption>
+            <colgroup>
+                <col>
+                <col style="background-color:gray;" span="2">
+                <col>
+            </colgroup>
+            <tr>
+                <th></th>
+                <th>타입</th>
+                <th>값</th>
+            </tr>
+            <tr>
+                <th>1</th>
+                <td>알파벳</td>
+                <td>A</td>
+            </tr>
+            <tr>
+                <th>2</th>
+                <td>숫자</td>
+                <td>7</td>
+            </tr>
+        </table>
+
+        <table class="ex_04">
+            <caption>Fruits</caption>
+            <colgroup>
+                <col span="2" style="background-color: yellowgreen;">
+                <col style="background-color: tomato;">
+            </colgroup>
+
+            <thead> <!-- header -->
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+
+            <tbody> <!-- body -->
+                <tr>
+                    <td>F123A</td>
+                    <td>Apple</td>
+                    <td>$22</td>
+                </tr>
+                <tr>
+                    <td>F098B</td>
+                    <td>Banana</td>
+                    <td>$19</td>
+                </tr>
+            </tbody>
+        </table>
+    </div> <!-- exBox -->
+    <!-- ex) -->
+
+    <h2>th '머리글 칸'을 지정</h2>
+    <br>
+    <p><mark>abbr</mark> = 열에 대한 간단한 설명</p>
+    <p><mark>headers</mark> = 관련된 하나 이상의 다른 머리글 칸 <strong>id</strong> 속성 값</p>
+    <p><mark>colspan</mark> = 확장하려는(병합) 열의 수</p> <!-- 가로병합 -->
+    <p><mark>rowspan</mark> = 확장하려는(병합) 행의 수</p> <!-- 세로병합 -->
+    <p><mark>scope</mark> = 자신이 누구의 '머리글 칸'인지 명시</p> <!-- col:자신의 열 / colgroup:모든 열 / row:자신의 행 / rowgroup:모든 행 / auto -->
+
+    <br />
+    <br />
+    <br />
+
+    <h2>caption = 표의 제목을 설정</h2>
+    <br>
+    <p>열리는 TABLE 태그 바로 다음에 작성해야함</p>
+    <p>TABLE 당 하나의 cation만 사용 가능</p>
+
+    <br />
+    <br />
+    <br />
+
+    <h2>colgroup , col</h2>
+    <br>
+    <p>표의 열들을 공통적으로 정의하는 컬럼 col 과 그의 집합</p>
+    <p><mark>span</mark> = 연속되는 열 수</p>
+
+    <br />
+    <br />
+    <br />
+
+    <h2>thead , tbody , tfoot</h2>
+    <br>
+    <p>표의 머리글 thead / 본문 tbody / 바닥글 tfoot 을 지정</p>
+    <p>기본적으로 테이블의 레이아웃에 영향을 주지 않음</p>
+
+    <br />
+    ------------------------------------------------------------------------------
+    <br />
+    <br />
+
+    <!-- ========================= form ========================================= -->
+    <h2>form</h2>
+    <br>
+    <p>웹서버에 정보를 제출하기 위한 양식 범위를 정의</p>
+    <p>form이 다른 form을 자식 요소로 포함할 수 없음</p>
+    <br>
+    <p><mark>action</mark> = 전송한 정보를 처리할 웹페이지의 URL / "URL"</p>
+    <p><mark>autocomplete</mark> = 사용자가 이전에 입력한 값으로 자동 완성 기능을 사용할 것인지 여부 / "on , off"</p> <!-- 검색기록 저장x -->
+    <p><mark>method</mark> = 서버로 전송할 HTTP 방식 / "get , post"</p>
+    <p><mark>name</mark> = 고유한 양식의 이름</p>
+    <p><mark>novalidate</mark> = 서버로 전송시 양식 데이터의 유효성을 검사하지 않도록 지정</p> <!-- 이메일형식x -->
+    <p><mark>target</mark> = 서버로 전송 후 응답받을 방식을 지정 / "_self , _blank"</p>
+
+    <br />
+    <br />
+    <br />
+
+    <!-- ex) -->
+    <div class="formBox">
+        <form action="/login" method="post" autocomplete="off"> <!-- 기본값은 method="get" / autocomplete="on"-->
+            <input type="email" name="email">
+            <input type="password" name="password">
+            <button type="submit">로그인</button>
+        </form>
+    </div>
+
+    <div class="inputBox">
+        <form action="/login" method="get">
+            <input type="email">
+            <input type="password">
+            <input type="submit" value="로그인">
+        </form>
+    </div>
+    <!-- ex) -->
+    <br />
+    <br />
+    <br />
+
+    <h2>input</h2>
+    <br>
+    <p>사용자에게 입력 받을 데이터 양식</p>
+    <p><mark>autocomplete</mark> = 자동완성기능 / 기록</p>
+    <p><mark>autofocus</mark> = 페이지가 로드될 때 자동으로 포커스</p>
+    <p><mark>checked</mark> = 양식이 선택되었음을 표시 / type 속성값이 "radio,checkBox 일 경우만</p>
+    <p><mark>disabled</mark> = 양식을 비활성화</p>
+    <p><mark>form</mark> = form 의 id 속성 값</p>
+    <p><mark>name</mark> = 양식의 이름</p>
+    <p><mark>type</mark> = 입력 받을 데이터의 종류</p>
+    <p><mark>maxlength</mark> = 사용글자 수 제한</p>
+
+    
+
+
+
+
+
+
+</div> <!-- wrap -->
+</body>
+</html>
