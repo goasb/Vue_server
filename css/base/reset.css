@@ -34,8 +34,8 @@ hr{margin:0; padding:0; border-bottom:1px solid #f06;}
 main, header, footer, aside, nav, section, article, figure, figcaption{display:block;}
 
 /* form ======================================================================  */
-form, fieldset, legend{margin:0; padding:0; border:0;}
-legend{position:absolute; width:0; height:0; overflow:hidden;}
+/* form, fieldset, legend{margin:0; padding:0; border:0;}
+legend{position:absolute; width:0; height:0; overflow:hidden;} */
 
 input{box-sizing:border-box; text-indent:0.5rem; cursor: pointer;}
 
