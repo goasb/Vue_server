@@ -1,0 +1,121 @@
+@import "./_basic/var";
+@import "./_basic/mixin";
+@import "./_basic/etc";
+
+body {padding:0; margin:auto;}
+#wrap {width: 1120px; height: 100%; padding-top:50px;}
+h1 {color:blue;}
+
+
+.exBox {
+    display: flex;
+    width: 100%;
+    height: 230px;
+
+    th {
+        border:1px solid red;
+        padding:10px;
+    }
+
+    td {
+        border:1px solid red;
+        padding:10px;
+    }
+
+.ex_01 {
+    border-collapse:collapse;
+    text-align: center;
+    margin-right:100px;
+
+    } // .ex_01
+    
+.ex_02 {
+    border-collapse:collapse;
+    text-align: center;
+    margin-right:100px;
+    margin-top:50px;
+    } // .ex_02
+
+.ex_03 {
+    border-collapse:collapse;
+    text-align: center;
+    margin-top:15px;
+    margin-right:100px;
+    } // .ex_03
+
+.ex_04 {
+    border-collapse:collapse;
+    text-align: center;
+    margin-top:15px;
+    } // .ex_04
+}
+
+.formBox {
+    width: 100%;
+    height: 50px;
+}
+
+.inputBox {
+    width: 100%;
+    height: 70px;
+}
+
+.numberBox {
+    width: 100%;
+    height: 50px;
+}
+
+.checkBox {
+    width: 100%;
+    height: 50px;
+}
+
+.fileBox {
+    width: 100%;
+    height: 50px;
+}
+
+.imgBox {
+    width: 100%;
+    height: 150px;
+}
+
+.radioBox {
+    width: 100%;
+    height: 50px;
+}
+
+.labelBox {
+    width: 100%;
+    height: 50px;
+}
+
+.buttonBox {
+    width: 100%;
+    height: 50px;
+}
+
+.textareaBox {
+    width: 100%;
+    height: 200px;
+}
+
+.fieldset_legendBox {
+    width: 100%;
+    height: 100px;
+}
+
+.selectBox {
+    width: 100%;
+    height: 50px;
+}
+
+.fruitsBox {
+    width: 100%;
+    height: 50px;
+}
+
+.progressBox {
+    width: 100%;
+    height: 50px;
+}

@@ -1,0 +1,48 @@
+/* @mixin myname(){}   // @include myname(); @function myFn(){}  // myFn(); */
+body { padding: 0; margin: auto; }
+
+#wrap { width: 1120px; height: 100%; padding-top: 50px; }
+
+h1 { color: blue; }
+
+.exBox { display: flex; width: 100%; height: 230px; }
+
+.exBox th { border: 1px solid red; padding: 10px; }
+
+.exBox td { border: 1px solid red; padding: 10px; }
+
+.exBox .ex_01 { border-collapse: collapse; text-align: center; margin-right: 100px; }
+
+.exBox .ex_02 { border-collapse: collapse; text-align: center; margin-right: 100px; margin-top: 50px; }
+
+.exBox .ex_03 { border-collapse: collapse; text-align: center; margin-top: 15px; margin-right: 100px; }
+
+.exBox .ex_04 { border-collapse: collapse; text-align: center; margin-top: 15px; }
+
+.formBox { width: 100%; height: 50px; }
+
+.inputBox { width: 100%; height: 70px; }
+
+.numberBox { width: 100%; height: 50px; }
+
+.checkBox { width: 100%; height: 50px; }
+
+.fileBox { width: 100%; height: 50px; }
+
+.imgBox { width: 100%; height: 150px; }
+
+.radioBox { width: 100%; height: 50px; }
+
+.labelBox { width: 100%; height: 50px; }
+
+.buttonBox { width: 100%; height: 50px; }
+
+.textareaBox { width: 100%; height: 200px; }
+
+.fieldset_legendBox { width: 100%; height: 100px; }
+
+.selectBox { width: 100%; height: 50px; }
+
+.fruitsBox { width: 100%; height: 50px; }
+
+.progressBox { width: 100%; height: 50px; }

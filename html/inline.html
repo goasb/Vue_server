@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <link rel="stylesheet" href="../font/fontawesome/css/all.css">
+    <link rel="stylesheet" href="../css/base/reset.css">
+    <link rel="stylesheet" href="../css/base/common.css">
+    <link rel="stylesheet" href="../css/inline.css">
+    
+    <!--[if IE]>
+    <script src="../ie/html5shiv/dist/html5shiv.min.js"></script>
+    <script src="../ie/PIE/PIE.js"></script>
+    <script src="../ie/Respond/dest/respond.min.js"></script>
+    <![endif]-->
+    
+    <link rel="stortcut icon" href="favicon.png" type="image/png">
+    <link rel="apple-touch-icon" href="favicon.png">
+    <title>inline_text</title>
+</head>
+
+<body>
+<!-- noscript ================================================== -->
+   <noscript>
+    <p>현재 접속하고 있는 사이트의 기능의 일부가 원활하게 실행되고 있지 않습니다.<br />자바스크립트의 기능을 활성화 해주세요</p>
+    <p><a target="_blank" href="http://enable-javascript.com/ko"></a>자바스크립트 활성화 처리하기</p>
+ </noscript>
+<!-- noscript ================================================== -->
+목차
+<ul>
+    <li><a href="#title1">제목1</a></li> <!-- a 태그를 통해 해당위치로 이동이 가능하다 -->
+    <li><a href="#title2">제목2</a></li>
+    <li><a href="#title3">제목3</a></li>
+</ul>
+<h2 id="title1">제목1</h2> <!-- id 값은 1번밖에 사용하지 못한다 -->
+<h2 id="title2">제목2</h2> <!-- class 값은 중복사용이 가능하다 -->
+<h2 id="title3">제목3</h2>
+<br />
+
+Using <abbr title="Hyper Text Markup Language">HTML</abbr> is fun and easy! <!-- 마우스를 올렸을 때 풀네임이 나오는 태그 -->
+<br />
+
+<b>안녕하세요 조제영입니다.</b> <!-- 의미x / 읽기흐름에 도움을 주는 용도 / 다른태그에 적합하지않을 때 마지막 수단으로 사용 / bold 체로 표시됨 -->
+<br />
+
+<mark>사용자의 관심을 끌기 위한 하이라이팅 용도</mark> <!-- css로 충분히 사용가능 -->
+<br />
+
+<em>단순히 의미 <mark>강조를</mark> 표시</em> <!-- 중첩가능 / 중첩될수록 의미 강조 / 이탤릭체(ltalic type)로 표시됨 -->
+<br />
+
+<strong>의미의 <mark>중요성을</mark> 나타내기 위해 사용</strong>
+<br />
+
+<i>em,strong,mark,cite,dfn 등에서 표현할 수 있는 적합한 의미가 아닌 경우 사용</i> <!-- 평범한 글자와 구분(아이콘이나 특수기호 같은)하기 위해 사용 -->
+<br />
+
+<dfn>용어를 정의할 때 사용</dfn>
+<br />
+
+<cite>The scream</cite> by Edword Munch. Painted in 1893 . <!-- 창작물에 대한 참조를 설정 -->
+<br />
+
+<q>짧은 인용문을 설정</q> <!-- 긴 인용문을 설정할 경우 <blockquote>를 사용 -->
+<br />
+
+<u>밑줄이 있는 글자를 설정</u> <!-- 순수하게 꾸미는 용도 / <span style="text-decoration:underline;"> 을 활용할 수 있을 경우에는 사용을 권장하지 않음 -->
+<br />
+
+<code>document.getElementById('id-value')</code> is a piece of computer code . <!-- 컴퓨터 코드 범위를 설정 / 기본적으로 고정폭(Monospace)글꼴 계열로 표시 <-->
+<br />
+
+<p>
+    <kbd>Ctrl+</kbd> <kbd>Alt+</kbd> <kbd>K</kbd>
+</p>
+<kbd>ESC</kbd> <!-- 텍스트 입력장치 (키보드)에서 사용자 입력을 나타내는 텍스트 범위를 설정 -->
+<br />
+
+X<sup>4</sup> + Y<sup>2</sup>, H<sub>2</sub>O <!-- 위 첨자<sup>와 아래 첨자 <sub>를 설정 / (Superscripted text, Subscript text) -->
+<br />
+
+<p>The Cure will be celebrating their 40th anniversary on 
+    <time datetime="2018-07-07">July 7</time> in London's Hyde Park.
+</p> <!-- 날짜나 시간을 나타내기 위한 목적으로 사용 / IE 지원불가 -->
+<br />
+
+<span>본질적으로 아무것도 나타내지 않는 콘텐츠 영역을 설정</span> <!-- 인라인요소 / 의미x -->
+<br />
+
+<del>삭제되었습니다.</del> <!-- 삭제된(변경된) 텍스트의 범위를 지정 -->
+<ins>추가되었습니다.</ins> <!-- 추가된(변경된) 텍스트의 범위를 지정. -->
+</body>
+</html>

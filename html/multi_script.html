@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <link rel="stylesheet" href="../font/fontawesome/css/all.css">
+    <link rel="stylesheet" href="../css/base/reset.css">
+    <link rel="stylesheet" href="../css/base/common.css">
+    <link rel="stylesheet" href="../css/multi_script.css">
+    <script src="../js/src/main.js" defer></script> <!-- defer : 문서 파싱(전체를 읽은) 후 작동 여부 "src 속성 필수" -->
+    
+    <!--[if IE]>
+    <script src="../ie/html5shiv/dist/html5shiv.min.js"></script>
+    <script src="../ie/PIE/PIE.js"></script>
+    <script src="../ie/Respond/dest/respond.min.js"></script>
+    <![endif]-->
+    
+    <link rel="stortcut icon" href="favicon.png" type="image/png">
+    <link rel="apple-touch-icon" href="favicon.png">
+    <title>multi_script</title>
+</head>
+
+<body>
+<!-- noscript ================================================== -->
+   <noscript>
+    <p>현재 접속하고 있는 사이트의 기능의 일부가 원활하게 실행되고 있지 않습니다.<br />자바스크립트의 기능을 활성화 해주세요</p>
+    <p><a target="_blank" href="http://enable-javascript.com/ko"></a>자바스크립트 활성화 처리하기</p>
+ </noscript>
+<!-- noscript ================================================== -->
+
+
+<!-- ========================= srcset ========================================= -->
+<div id="wrap">
+  
+  <!-- <img srcset="../img/heropy_small.png 400w,
+               ../img/heropy_medium.png 700w,
+               ../img/heropy_large.png 1000w" src="../img/heropy.png" alt="HEROPY" /> -->
+  <!-- w 디스크립터(Width descriptor)는 이미지의 원본 크기(가로 너비)를 의미합니다. 예를 들어 400x300(px) 크기 이미지의 w 값은 400w입니다. -->
+
+  <img srcset="../img/heropy_small.png 1x,
+               ../img/heropy_medium.png 1.75x,
+               ../img/heropy_large.png 2.5x" src="../img/heropy.png" alt="HEROPY" />
+  <!-- x 디스크립터(Device pixel ratio descriptor)는 이미지의 비율 의도를 의미합니다. 위 w 디스크립터에서 사용했던 예제를 다음과 같이 수정할 수 있습니다. -->
+
+  <!-- w 디스크립터를 사용하면 x 디스크립터를 사용하지 않아도 됩니다. 많은 경우 w 디스크립터의 사용을 추천합니다. -->
+  <br />
+  <br />
+  <br />
+
+  <!-- ========================= sizes ========================================= -->
+  <img srcset="../img/heropy_small.png 400w,
+               ../img/heropy_medium.png 700w,
+               ../img/heropy_large.png 1000w" sizes="500px" src="../img/heropy.png" alt="HEROPY" />
+
+
+  <br />
+  <br />
+  <br />
+
+  <!-- ========================= audio ========================================= -->
+  <p><mark>autoplay</mark> = 준비되면 바로 재생</p>
+  <p><mark>controls</mark> = 제어 메뉴를 표시</p>
+  <p><mark>loop</mark> = 재생이 끝나면 다시 처음부터 재생</p>
+  <p><mark>preload</mark> = 페이지가 로드될 때 파일을 로드할지의 지정(힌트 제공)</p> <!-- none:로드하지않음 / metadata:메타데이터만 로드 / auto:전체 파일 로드 -->
+  <p><mark>muted</mark> = 음소거 여부</p>
+  <p><mark>src</mark> = 콘텐츠 URL</p>
+
+  <!-- ex) -->
+  <audio src="https://interactive-examples.mdn.mozilla.net/media/examples/t-rex-roar.mp3" controls loop muted></audio>
+
+  <br />
+  <br />
+  <br />
+
+  <!-- ========================= video ========================================= -->
+  <p><mark>poster</mark> = 동영상 썸네일 이미지 URL</p>
+  <p><mark>crossorigin</mark> = 가져오기가 CORS를 사용하여 수행되어야 하는지 여부</p>
+  <p><mark>width</mark> = 동영상 가로 너비</p>
+  <p><mark>height</mark> = 동영상 세로 너비</p>
+
+  <!-- ex) -->
+  <video src="https://interactive-examples.mdn.mozilla.net/media/examples/flower.webm" controls loop
+    poster="../img/heropy.png"></video>
+
+  <br />
+  <br />
+  <br />
+
+  <!-- ========================= figure , figcaption ========================================= -->
+
+  <h2>figure 는 이미지나 삽화,도표 등의 영역을 설정.</h2>
+  <br>
+  <p>figcation 은 figure 에 포함되어 이미지나 삽화 등의 설명을 표시</p>
+
+  <!-- ex) -->
+  <figure>
+    <img src="../img/heropy.png" alt="heropy">
+    <figcaption> HEROPY 이미지입니다. </figcaption>
+  </figure>
+
+  <br />
+  <br />
+  <br />
+
+  <!-- ========================= iframe ========================================= -->
+
+  <h2>다른 html 페이지를 현재 페이지에 삽입 (중첩된 브라우저 컨텍스트(프레임)를 표시)</h2>
+  <br />
+  <p><mark>allowfullscreen</mark> = 전체 화면 모드 사용 여부</p>
+  <p><mark>frameborder</mark> = 프레임 테두리 사용 여부</p>
+  <p><mark>sandbox</mark> = 보안을 위한 읽기 전용으로 삽입</p>
+  <!-- allow-form:양식 제출 가능 / allow-script:스크립트 실행가능 / allow-same-origin:같은 출처(도메인)의 리소스 사용가능 -->
+
+
+  <!-- ex) -->
+  <p>우리 페이지야!</p>
+  <div>
+    <img src="../img/heropy.png" alt="HEROPY">
+  </div>
+
+  <div>
+    <iframe src="http://www.jobkorea.co.kr/User/ResumeMng" frameborder="0" width="1280" height="500px"
+      sytle="border:1px solid red;"></iframe>
+  </div>
+
+  <div>
+    <iframe width="700" height="500" src="https://www.youtube.com/embed/Fp0PHQVEW90" frameborder="0"
+      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+
+  <br />
+  <br />
+  <br />
+
+  <!-- ========================= canvas ========================================= -->
+
+  <h2><mark>Canvas API</mark> 이나 <mark>WebGL API</mark>를 사용하여 그래픽이나 애니메이션을 랜더링</h2>
+  <br />
+  <p><mark>width</mark> = 캔버스 가로 너비</p>
+  <p><mark>height</mark> = 캔버스 세로 너비</p>
+
+  <!-- ex) -->
+  <canvas id="canvas" width="200" height="150"></canvas>
+  <script>
+    const canvas = document.getElementById('canvas');
+    const ctx = canvas.getContext('2d');
+    ctx.fillStyle = 'rgb(200,0,0)';
+    ctx.fillRect(10, 10, 50, 50);
+
+    ctx.fillStyle = 'rgb(0, 0, 200, 0.5)';
+    ctx.fillRect(30, 30, 50, 50);
+  </script>
+  <!-- 중간 대문자 카멜표기법 -->
+
+  <br />
+  <br />
+  <br />
+
+  <!-- ========================= script ========================================= -->
+
+  <h2>script 스크립트 코드를 문서에 포함하거나 참조(외부 스크립트)</h2>
+  <br />
+  <p><mark>async</mark> = 스크립트의 비동기적(Asynchronously) 실행여부 "src 속성 필수"</p>
+  <p><mark>crossorigin</mark> = 별도의 도메인을 사용하는 사이트(CORS)의 오류로깅(Error logging)을 허용하기 위해 사용</p>
+  <p><mark>defer</mark> = 문서 파싱(구문 분석) 후 작동 여부 "src 속성 필수"</p>
+  <p><mark>src</mark> = 참조할 외부 스크립트 URL "포함된 스크립트 코드는 무시됨"</p>
+
+  <!-- ex) -->
+  <div id="my_name">HEROPY!</div>
+
+  <script src="../js/src/main.js">
+    /* "포함된 스크립트 코드는 무시됨" */
+    console.log('안녕하세요~');
+  </script>
+
+  <br />
+  <br />
+  <br />
+
+  <!-- ========================= noscript ========================================= -->
+
+  <h2>스크립트를 지원하지 않는 경우에 삽입할 HTML을 정의</h2>
+
+  자바자바! <script src="../js/src/main.js"></script>
+  <noscript>
+    자바스크립트가 지원하지 않는 환경입니다.
+  </noscript>
+
+</div>
+</body>
+
+</html>

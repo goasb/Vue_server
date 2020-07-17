@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <link rel="stylesheet" href="../font/fontawesome/css/all.css">
+    <link rel="stylesheet" href="../css/base/reset.css">
+    <link rel="stylesheet" href="../css/base/common.css">
+    <link rel="stylesheet" href="../css/table_element.css">
+    
+    <!--[if IE]>
+    <script src="../ie/html5shiv/dist/html5shiv.min.js"></script>
+    <script src="../ie/PIE/PIE.js"></script>
+    <script src="../ie/Respond/dest/respond.min.js"></script>
+    <![endif]-->
+    
+    <link rel="stortcut icon" href="favicon.png" type="image/png">
+    <link rel="apple-touch-icon" href="favicon.png">
+    <title>table_element</title>
+</head>
+<body>
+
+<div id="wrap">
+    <h1>HTML / 요소 - 표 콘텐츠 & 양식</h1>
+    <br />
+    <!-- ========================= table ========================================= -->
+    <h2>데이터 표 table의 행(줄 tr )과 열(칸,셀(cell) / th,td ) 을 생성</h2>
+    <!-- Table Row / Table Heafer / Table Data -->
+    <br />
+    <!-- ex) -->
+    <div class="exBox">
+        <table class="ex_01">
+            <!-- 세로 표 -->
+            <caption>데이터 타입과 값</caption>
+            <tr>
+                <th colspan="2" id="th_data">데이터</th>
+            </tr>
+            <tr>
+                <th abbr="Type" scope="col" headers="th_data">데이터 타입</th>
+                <th abbr="value" scope="col" headers="th_data">데이터 값</th>
+            </tr>
+            <tr>
+                <td>알파벳</td>
+                <td>A</td>
+            </tr>
+            <tr>
+                <td>숫자</td>
+                <td>7</td>
+            </tr>
+        </table>
+        <br>
+        <table class="ex_02">
+            <!-- 가로 표 -->
+            <tr>
+                <th rowspan="2" id="th_data">데이터</th>
+                <th headers="th_data" id="th_type">타입</th>
+                <td headers="th_type">알파벳</td>
+                <td headers="th_type">숫자</td>
+            </tr>
+            <tr>
+                <th headers="th_data" id="th_value">값</th>
+                <td headers="th_value">A</td>
+                <td headers="th_value">7</td>
+            </tr>
+        </table>
+        <br>
+        <table class="ex_03">
+            <!-- colgroup -->
+            <caption>데이터 타입과 값</caption>
+            <colgroup>
+                <col>
+                <col style="background-color:gray;" span="2">
+                <col>
+            </colgroup>
+            <tr>
+                <th></th>
+                <th>타입</th>
+                <th>값</th>
+            </tr>
+            <tr>
+                <th>1</th>
+                <td>알파벳</td>
+                <td>A</td>
+            </tr>
+            <tr>
+                <th>2</th>
+                <td>숫자</td>
+                <td>7</td>
+            </tr>
+        </table>
+
+        <table class="ex_04">
+            <caption>Fruits</caption>
+            <colgroup>
+                <col span="2" style="background-color: yellowgreen;">
+                <col style="background-color: tomato;">
+            </colgroup>
+
+            <thead> <!-- header -->
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+
+            <tbody> <!-- body -->
+                <tr>
+                    <td>F123A</td>
+                    <td>Apple</td>
+                    <td>$22</td>
+                </tr>
+                <tr>
+                    <td>F098B</td>
+                    <td>Banana</td>
+                    <td>$19</td>
+                </tr>
+            </tbody>
+        </table>
+    </div> <!-- exBox -->
+    <!-- ex) -->
+
+    <h2>th '머리글 칸'을 지정</h2>
+    <br>
+    <p><mark>abbr</mark> = 열에 대한 간단한 설명</p>
+    <p><mark>headers</mark> = 관련된 하나 이상의 다른 머리글 칸 <strong>id</strong> 속성 값</p>
+    <p><mark>colspan</mark> = 확장하려는(병합) 열의 수</p> <!-- 가로병합 -->
+    <p><mark>rowspan</mark> = 확장하려는(병합) 행의 수</p> <!-- 세로병합 -->
+    <p><mark>scope</mark> = 자신이 누구의 '머리글 칸'인지 명시</p> <!-- col:자신의 열 / colgroup:모든 열 / row:자신의 행 / rowgroup:모든 행 / auto -->
+
+    <br />
+    <br />
+    <br />
+
+    <h2>caption = 표의 제목을 설정</h2>
+    <br>
+    <p>열리는 TABLE 태그 바로 다음에 작성해야함</p>
+    <p>TABLE 당 하나의 cation만 사용 가능</p>
+
+    <br />
+    <br />
+    <br />
+
+    <h2>colgroup , col</h2>
+    <br>
+    <p>표의 열들을 공통적으로 정의하는 컬럼 col 과 그의 집합</p>
+    <p><mark>span</mark> = 연속되는 열 수</p>
+
+    <br />
+    <br />
+    <br />
+
+    <h2>thead , tbody , tfoot</h2>
+    <br>
+    <p>표의 머리글 thead / 본문 tbody / 바닥글 tfoot 을 지정</p>
+    <p>기본적으로 테이블의 레이아웃에 영향을 주지 않음</p>
+
+    <br />
+    ------------------------------------------------------------------------------
+    <br />
+    <br />
+
+    <!-- ========================= form ========================================= -->
+    <h2>form</h2>
+    <br>
+    <p>웹서버에 정보를 제출하기 위한 양식 범위를 정의</p>
+    <p>form이 다른 form을 자식 요소로 포함할 수 없음</p>
+    <br>
+    <p><mark>action</mark> = 전송한 정보를 처리할 웹페이지의 URL / "URL"</p>
+    <p><mark>autocomplete</mark> = 사용자가 이전에 입력한 값으로 자동 완성 기능을 사용할 것인지 여부 / "on , off"</p> <!-- 검색기록 저장x -->
+    <p><mark>method</mark> = 서버로 전송할 HTTP 방식 / "get , post"</p>
+    <p><mark>name</mark> = 고유한 양식의 이름</p>
+    <p><mark>novalidate</mark> = 서버로 전송시 양식 데이터의 유효성을 검사하지 않도록 지정</p> <!-- 이메일형식x -->
+    <p><mark>target</mark> = 서버로 전송 후 응답받을 방식을 지정 / "_self , _blank"</p>
+
+    <br />
+    <br />
+    <br />
+
+    <!-- ex) -->
+    <div class="formBox">
+        <form action="/login" method="post" autocomplete="off"> <!-- 기본값은 method="get" / autocomplete="on"-->
+            <input type="email" name="email">
+            <input type="password" name="password">
+            <button type="submit">로그인</button>
+        </form>
+    </div>
+
+    <div class="inputBox">
+        <form action="/login">
+            <input type="text" name="id">
+            <input type="password" name="pw">
+            <input type="submit" value="로그인">
+            <input type="reset" value="초기화"> <!-- 포함된 양식만 초기화를 한다 -->
+        </form>
+            <input type="text">
+    </div>
+
+    <div class="numberBox">
+        <input type="number" placeholder="숫자를 입력하세요!">
+        <input type="number" max="8" min="4">
+        <input type="number" step="4"> <!-- 해당숫자에 배수 -->
+        <input type="number" value="0000" disabled>
+        <input type="number" value="0000" readonly>
+    </div>
+
+        <div class="checkBox">
+            <input type="checkbox" checked> <!-- 기본설정이 체크 -->
+        </div>
+
+        <div class="fileBox">
+            <input type="file" multiple> <!-- 다중파일 선택 -->
+        </div>
+
+        <div class="imgBox">
+            <form action="/login">
+                <input type="image" src="../img/heropy.png" width="100" height="100" alt="HEROPY"> <!-- 이미지를 버튼으로 활용 가능하다 -->
+            </form>
+        </div>
+
+        <div class="radioBox">
+            <input type="radio" name="radio">
+            <input type="radio" name="radio" checked> <!-- 3개중에 하나만 선택 하시오. -->
+            <input type="radio" name="radio">
+        </div>
+
+        <div class="labelBox">
+            <!-- 라벨 가능 요소를 참조 -->
+            <input type="checkbox" id="user-agreement" /> <!-- id="user-agreement" id값을 쓰고 for를 사용하면 된다. -->
+            <label for="user-agreement">동의하십니까?</label> <!-- for="user-agreement" 를 지우게 되면 체크박스를 클릭해야만 체크가 된다. -->
+
+            <!-- 라벨 가능 요소를 포함 -->
+            <label><input type="checkbox" />동의하십니까?</label> <!-- input 요소를 사용하면 for 같은 속성 사용가능 -->
+        </div>
+
+        <div class="buttonBox">
+            <input type="reset" value="초기화">
+            <button type="reset">초기화</button>
+
+            <input type="submit" value="제출">
+            <button type="submit">제출</button>
+
+            <button onclick="doit()">클릭하세요!</button> <!-- 클릭 시 팝업실행 -->
+            <script>
+                function doit() {
+                    alert('클릭했습니다!');
+                }
+            </script>
+        </div> <!-- buttonBox -->
+
+            <div class="textareaBox">
+                <textarea name="" id="" cols="30" rows="10"></textarea>
+                <textarea rows="10" placeholder="야 빨리 뭐라도 써봐!"></textarea>
+            </div> <!-- textareaBox -->
+
+
+            <div class="fieldset_legendBox">
+                <form>
+                    <fieldset>
+                      <legend>Coffee Size</legend>
+                      <label>
+                          <input type="radio" name="size" value="tall" />
+                          Tall
+                      </label>
+                      <label>
+                          <input type="radio" name="size" value="grande" />
+                          Grande
+                      </label>
+                      <label>
+                          <input type="radio" name="size" value="venti" />
+                          Venti
+                      </label>
+                    </fieldset>
+                  </form>
+            </div> <!-- fieldset_legendBox -->
+
+
+            <div class="selectBox">
+                <select name="fruits">
+                    <optgroup label="내가 좋아하는 과일">
+                        <option lable="apple" value="apple">apple <!-- lable , value 태그를 통해 사용도 가능하다 / 별로 권장하지 않음 -->
+                        <option>orange</option>
+                        <option>banana</option>
+                    </optgroup>
+
+                    <optgroup label="내가 싫어하는 과일">
+                        <option selected>mango</option> <!-- selected : 1순위로 설정이 되어있다. -->
+                        <option>fineapple</option>
+                    </optgroup>
+                </select>
+            </div> <!-- selectBox -->
+
+
+            <div class="fruitsBox">
+                <input type="text" list="fruits"> <!-- 양식 제공 -->
+
+                <datalist id="fruits">
+                    <!-- 자동완성기능을 활성화 -->
+                    <option>Apple</option>
+                    <option>Orange</option>
+                    <option>Banana</option>
+                    <option>Mango</option>
+                    <option>Fineapple</option>
+                </datalist>
+            </div>
+        
+            <div class="progressBox">
+                <progress value="0" max="100">70%</progress> <!-- max 속성을 제외 시 소수점으로 표기가능 -->
+
+                <script> /* 0 ~ 100 까지 1초에 한번씩 10씩 채워라 100이 채워지면 정지해라 */
+                    const progress = document.querySelector('progress');
+                    const interval = setInterval(function(){
+                        progress.value += 10;
+                        if (progress.value >= 100) clearInterval(interval);
+                    }, 1000)
+                </script>
+            </div> <!-- progressBox -->
+
+    <!-- ex) -->
+    <br />
+    <br />
+    <br />
+
+    <h2>input</h2>
+    <br>
+    <p>사용자에게 입력 받을 데이터 양식</p>
+    <p><mark>autocomplete</mark> = 자동완성기능 / 기록</p>
+    <p><mark>autofocus</mark> = 페이지가 로드될 때 자동으로 포커스</p>
+    <p><mark>checked</mark> = 양식이 선택되었음을 표시 / type 속성값이 "radio,checkBox 일 경우만</p>
+    <p><mark>disabled</mark> = 양식을 비활성화</p>
+    <p><mark>readonly</mark> = 포커스만 활성화 / 읽기전용</p>
+    <p><mark>form</mark> = form 의 id 속성 값</p>
+    <p><mark>name</mark> = 양식의 이름</p>
+    <p><mark>type</mark> = 입력 받을 데이터의 종류</p>
+    <p><mark>maxlength</mark> = 사용글자 수 제한</p>
+
+    <br />
+    <br />
+    <br />
+
+    <h2>button</h2>
+    <br>
+    <p>선택 가능한 버튼을 지정</p>
+    <p><mark>autofocus</mark> = 페이지가 로드될 때 자동으로 포커스</p>
+    <p><mark>disabled</mark> = 버튼을 비활성화</p>
+    <p><mark>form</mark> = form의 id 속성 값</p>
+    <p><mark>name</mark> = 폼 데이터와 함께 전송되는 버튼의 이름</p>
+    <p><mark>type</mark> = 버튼의 타입</p>
+
+    <br />
+    <br />
+    <br />
+
+    <h2>textarea</h2>
+    <br>
+    <p>여러 줄과 일반 텍스트 양식</p>
+    <p><mark>rows</mark> = 양식의 줄 수 / "숫자 , 2"</p>
+   
+    <br />
+    <br />
+    <br />
+
+    <h2>fieldset , legend</h2>
+    <br>
+    <p>같은 목적의 양식을 그룹화 fieldset 하여 제목 legend 을 지정</p>
+
+    <br />
+    <br />
+    <br />
+
+    <h2>select , datalist , optgroup , option</h2>
+    <br>
+    <p>옵션(option , optgroup)의 선택 메뉴 (select)나 자동완성(datalist)을 제공</p>
+    ------------------------------------------------------------------------------
+    <h2>select</h2>
+    <br>
+    <p>옵션을 선택하는 메뉴</p>
+    <p><mark>autocomplete</mark> = 사용자가 이전에 입력한 값으로 자동 완성 기능을 사용할 것인지 여부</p>
+    <p><mark>disabled</mark> = 선택 메뉴를 비활성화</p>
+    <p><mark>multiple</mark> = 다중 선택 여부</p>
+    <p><mark>name</mark> = 선택 메뉴의 이름</p>
+    <p><mark>size</mark> = 한 번에 볼 수 있는 행의 개수</p>
+    ------------------------------------------------------------------------------
+    <h2>datalist</h2>
+    <br>
+    <p>input 에 미리 정의 옵션을 지정하여 자동완성(autocomplete) 기능을 제공하는데 사용</p>
+
+    <br />
+    <br />
+    <br />
+
+    <h2>progress</h2>
+    <br>
+    <p>작업의 완료 진행률을 표시</p>
+    <p><mark>max</mark> = 작업의 총량 / "max 속성을 생략할 경우 0 ~ 1 사이의 숫자여야 함"<p>
+    <p><mark>value</mark> = 작업의 진행량</p>
+
+</div> <!-- wrap -->
+</body>
+</html>
